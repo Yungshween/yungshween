@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="611" class="">
+    <defs>
+        <style/>
+    </defs>
+    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h2{margin:8px 0 2px;padding:0;color:#0366d6;font-weight:400;font-size:16px}h2 svg{fill:currentColor}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}#metrics-end,.fill-width{width:100%}.activity{margin-bottom:12px}.activity .field{width:100%;overflow:hidden;text-overflow:ellipsis;max-width:450px;white-space:nowrap;margin-bottom:0}.activity .field .content{flex-grow:1;text-overflow:ellipsis;overflow:hidden}.activity .commit .sha,.activity .repo{display:inline;color:#58a6ff}.activity .code,span.code{background-color:#7777771f;padding:1px 5px;font-size:80%;border-radius:6px;color:#777;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;margin:0 4px -3px}.activity .details,.activity .timestamp{padding-left:38px;display:flex;flex-direction:column;font-size:13px;color:#666}.activity .timestamp{font-size:10px;margin-top:4px}.activity .commit{display:flex;align-items:center}.activity .commit .sha,code{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.activity .commit .sha{margin-right:4px}.activity .commit .message{overflow:hidden;text-overflow:ellipsis;width:360px;white-space:nowrap}code{background-color:#7777771f;display:inline-block;border-radius:6px;color:#777;padding:1px 5px;font-size:80%}.gemoji{height:1em;width:1em;margin-bottom:-.125em}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
+    <style/>
+    <foreignObject x="0" y="0" width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
+            <section>
+                <h2 class="field">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1116 0v5.25a.75.75 0 01-1.5 0V8a6.5 6.5 0 10-13 0v5.25a.75.75 0 01-1.5 0V8zm5.5 4.25a.75.75 0 01.75-.75h3.5a.75.75 0 010 1.5h-3.5a.75.75 0 01-.75-.75zM3 6.75C3 5.784 3.784 5 4.75 5h6.5c.966 0 1.75.784 1.75 1.75v1.5A1.75 1.75 0 0111.25 10h-6.5A1.75 1.75 0 013 8.25v-1.5zm1.47-.53a.75.75 0 011.06 0l.97.97.97-.97a.75.75 0 011.06 0l.97.97.97-.97a.75.75 0 111.06 1.06l-1.5 1.5a.75.75 0 01-1.06 0L8 7.81l-.97.97a.75.75 0 01-1.06 0l-1.5-1.5a.75.75 0 010-1.06z"/>
+                    </svg>
+                    Recent activity
+                </h2>
+                <div class="row">
+                    <section>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Pushed 10 commits in
+                                        <span class="repo">Yungshween/nexus-ai</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>on branch <span class="code">main</span></div>
+                                    <div class="commit">
+                                        <div class="sha">#8b79e13</div>
+                                        <div class="message">Add CursorFocus to gitignore</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#050016b</div>
+                                        <div class="message">Enhance Infinity API integration and refactor OpenRouter components</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#9536506</div>
+                                        <div class="message">Update last_updated timestamps in .cursorrules and Focus.md to reflect the new time</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#2559a1b</div>
+                                        <div class="message">feat: Optimize embeddings with Infinity API and reorganize ChromaDB integration</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#71f4752</div>
+                                        <div class="message">fix: update coverage workflow and codecov configuration for correct file paths</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#a6a66ab</div>
+                                        <div class="message">chore: update UV configuration and dependencies</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#1d59cb9</div>
+                                        <div class="message">chore: update UV configuration, fix pylint issues</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#2fc82a1</div>
+                                        <div class="message">fix: workflow and configuration updates - remove environments, fix isort and gitignore</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#508bcd4</div>
+                                        <div class="message">Update GitHub Actions workflow: Change environment name from 'production' to 'Publishing' in astro.yml</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#574b3c3</div>
+                                        <div class="message">chore: add badges <img class="gemoji" src="data:image/png;base64,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" height="16" width="16" alt="" /></div>
+                                    </div>
+                                </div>
+                                <div class="timestamp">9 Jan 2025, 00:49:55</div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Pushed 2 commits in
+                                        <span class="repo">Yungshween/nexus-ai</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>on branch <span class="code">main</span></div>
+                                    <div class="commit">
+                                        <div class="sha">#4bd876f</div>
+                                        <div class="message">Update last_updated timestamps in .cursorrules and Focus.md to reflect the new time</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#6e73c83</div>
+                                        <div class="message">feat: Optimize embeddings with Infinity API and reorganize ChromaDB integration</div>
+                                    </div>
+                                </div>
+                                <div class="timestamp">8 Jan 2025, 05:05:02</div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Pushed 1 commit in
+                                        <span class="repo">Yungshween/nexus-ai</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>on branch <span class="code">main</span></div>
+                                    <div class="commit">
+                                        <div class="sha">#a44c42f</div>
+                                        <div class="message">fix: update coverage workflow and codecov configuration for correct file paths</div>
+                                    </div>
+                                </div>
+                                <div class="timestamp">5 Jan 2025, 20:34:00</div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Pushed 1 commit in
+                                        <span class="repo">Yungshween/nexus-ai</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>on branch <span class="code">main</span></div>
+                                    <div class="commit">
+                                        <div class="sha">#a0bc2d8</div>
+                                        <div class="message">chore: update UV configuration and dependencies</div>
+                                    </div>
+                                </div>
+                                <div class="timestamp">5 Jan 2025, 20:18:04</div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Pushed 1 commit in
+                                        <span class="repo">Yungshween/nexus-ai</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>on branch <span class="code">main</span></div>
+                                    <div class="commit">
+                                        <div class="sha">#51939a8</div>
+                                        <div class="message">chore: update UV configuration, fix pylint issues</div>
+                                    </div>
+                                </div>
+                                <div class="timestamp">5 Jan 2025, 20:06:04</div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
+    </foreignObject>
+</svg>
