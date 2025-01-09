@@ -1,6 +1,8 @@
-# Hi there 👋
+# Welcome to My Digital Workshop 🔧
 
-### Overview
+I'm Andrew, a developer focused on optimizing workflows and strengthening core programming skills while building AI-powered solutions for financial markets.
+
+## Overview
 
 ![Repository Metrics](/docs/assets/images/metrics/github-metrics.svg)
 
