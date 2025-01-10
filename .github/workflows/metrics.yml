@@ -110,12 +110,15 @@ jobs:
           token: NOT_NEEDED
           base: ""
           plugin_rss: yes
-          plugin_rss_source: http://export.arxiv.org/rss/q-fin  # Or your preferred feed from above
-          plugin_rss_limit: 4
+          plugin_rss_source: http://export.arxiv.org/rss/q-fin 
+          plugin_rss_limit: 8
 
       # Repository License
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          repository: Yungshween/nexus-ai
+          token: ${{ secrets.METRICS_TOKEN }}
 
       - uses: lowlighter/metrics@latest
         with:
@@ -123,7 +126,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           template: repository
-          repo: nexus-ai
+          repo: Yungshween/nexus-ai
           plugin_licenses: yes
           plugin_licenses_setup: |
             bash -c '
@@ -138,7 +141,6 @@ jobs:
           plugin_licenses_legal: yes
           plugin_licenses_ratio: yes
           retries: 3
-          retry_delay: 300
           optimize: svg
           verify: yes
 
