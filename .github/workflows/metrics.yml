@@ -133,14 +133,14 @@ jobs:
     name: "Licenses with open-source ratio graphs"
     runs-on: ubuntu-latest
     permissions:
-    contents: write
+      contents: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4  # Add checkout step
+        uses: actions/checkout@v4 
               
       - uses: lowlighter/metrics@latest
         with:
-          filename: docs/assets/images/metrics/metrics.plugin.licenses.ratio.svg  # Updated path to match your README
+          filename: docs/assets/images/metrics/metrics.plugin.licenses.ratio.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           template: repository
