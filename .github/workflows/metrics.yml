@@ -7,6 +7,7 @@ on:
 
 jobs:
   metrics:
+    name: "Generate Metrics"
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -19,6 +20,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           
   languages:
+    name: "Generate Languages"
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -41,6 +43,7 @@ jobs:
           plugin_languages_threshold: 0%
           
   projects:
+    name: "Generate Projects"
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -53,6 +56,7 @@ jobs:
           plugin_projects_limit: 4
           
   leetcode:
+    name: "LeetCode Stats"
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -65,7 +69,10 @@ jobs:
           plugin_leetcode_user: yungshween
           
   starlists:
+    name: "Star Lists"
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
@@ -76,7 +83,10 @@ jobs:
           plugin_starlists_languages: yes
           
   repositories:
+    name: "Repositories"
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
@@ -86,7 +96,10 @@ jobs:
           plugin_repositories_featured: 1
           
   topics:
+    name: "Topics"
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
@@ -97,19 +110,22 @@ jobs:
           plugin_topics_limit: 15
 
   icons:
+    name: "Icons"
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.topics.icons.svg
-          token: NOT_NEEDED
+          token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_topics: yes
           plugin_topics_limit: 0
           plugin_topics_mode: icons
 
   repository-license:
-    name: Licenses with open-source ratio graphs
+    name: "Licenses with open-source ratio graphs"
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -127,7 +143,7 @@ jobs:
           plugin_licenses_ratio: yes
 
   repository-calendar:
-    name: Full-year calendar
+    name: "Full-year calendar"
     runs-on: ubuntu-latest
     permissions:
       contents: write
