@@ -136,7 +136,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           template: repository
-          repo: nexus-ai
+          repo: Yungshween/nexus-ai
           plugin_licenses: yes
           plugin_licenses_setup: bash -c '[[ -f pyproject.toml ]] && pip install uv && uv install || true; [[ -f package.json ]] && npm ci || true'
           plugin_licenses_legal: yes
