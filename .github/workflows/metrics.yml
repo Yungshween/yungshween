@@ -16,8 +16,13 @@ jobs:
         with:
           template: classic
           base: header, activity, community, repositories
-          filename: docs/assets/images/metrics/metrics.svg
+          filename: docs/assets/images/metrics/github-metrics.svg  # Updated filename to match your README
           token: ${{ secrets.METRICS_TOKEN }}
+          # Additional recommended configurations
+          config_timezone: America/New_York  # Adjust to your timezone
+          retries: 3
+          optimize: svg
+          verify: yes
           
   languages:
     name: "Generate Languages"
@@ -117,30 +122,47 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.topics.icons.svg
+          filename: docs/assets/images/metrics/metrics.plugin.topics.icons.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_topics: yes
           plugin_topics_limit: 0
           plugin_topics_mode: icons
 
-  repository-license:
-    name: "Licenses with open-source ratio graphs"
-    runs-on: ubuntu-latest
-    permissions:
+    repository-license:
+      name: "Licenses with open-source ratio graphs"
+      runs-on: ubuntu-latest
+      permissions:
       contents: write
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.licenses.ratio.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          template: repository
-          repo: Yungshween/nexus-ai
-          plugin_licenses: yes
-          plugin_licenses_setup: bash -c '[[ -f pyproject.toml ]] && pip install uv && uv install || true; [[ -f package.json ]] && npm ci || true'
-          plugin_licenses_legal: yes
-          plugin_licenses_ratio: yes
+      steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4  # Add checkout step
+                
+        - uses: lowlighter/metrics@latest
+          with:
+            filename: docs/assets/images/metrics/metrics.plugin.licenses.ratio.svg  # Updated path to match your README
+            token: ${{ secrets.METRICS_TOKEN }}
+            base: ""
+            template: repository
+            repo: Yungshween/nexus-ai
+            plugin_licenses: yes
+            plugin_licenses_setup: |
+              bash -c '
+              if [ -f pyproject.toml ]; then
+                python -m pip install --upgrade pip
+                pip install uv
+                uv pip install -r requirements.txt || true
+              fi
+              if [ -f package.json ]; then
+                npm ci || true
+              fi'
+            plugin_licenses_legal: yes
+            plugin_licenses_ratio: yes
+            # Additional recommended configurations
+            retries: 3
+            retry_delay: 300
+            optimize: svg
+            verify: yes
 
   repository-calendar:
     name: "Full-year calendar"
@@ -150,7 +172,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.isocalendar.fullyear.svg
+          filename: docs/assets/images/metrics/metrics.plugin.isocalendar.fullyear.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_isocalendar: yes
