@@ -129,40 +129,40 @@ jobs:
           plugin_topics_limit: 0
           plugin_topics_mode: icons
 
-    repository-license:
-      name: "Licenses with open-source ratio graphs"
-      runs-on: ubuntu-latest
-      permissions:
-      contents: write
-      steps:
-        - name: Checkout repository
-          uses: actions/checkout@v4  # Add checkout step
-                
-        - uses: lowlighter/metrics@latest
-          with:
-            filename: docs/assets/images/metrics/metrics.plugin.licenses.ratio.svg  # Updated path to match your README
-            token: ${{ secrets.METRICS_TOKEN }}
-            base: ""
-            template: repository
-            repo: Yungshween/nexus-ai
-            plugin_licenses: yes
-            plugin_licenses_setup: |
-              bash -c '
-              if [ -f pyproject.toml ]; then
-                python -m pip install --upgrade pip
-                pip install uv
-                uv pip install -r requirements.txt || true
-              fi
-              if [ -f package.json ]; then
-                npm ci || true
-              fi'
-            plugin_licenses_legal: yes
-            plugin_licenses_ratio: yes
+  repository-license:
+    name: "Licenses with open-source ratio graphs"
+    runs-on: ubuntu-latest
+    permissions:
+    contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4  # Add checkout step
+              
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: docs/assets/images/metrics/metrics.plugin.licenses.ratio.svg  # Updated path to match your README
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          template: repository
+          repo: Yungshween/nexus-ai
+          plugin_licenses: yes
+          plugin_licenses_setup: |
+            bash -c '
+            if [ -f pyproject.toml ]; then
+              python -m pip install --upgrade pip
+              pip install uv
+              uv pip install -r requirements.txt || true
+            fi
+            if [ -f package.json ]; then
+              npm ci || true
+            fi'
+          plugin_licenses_legal: yes
+          plugin_licenses_ratio: yes
             # Additional recommended configurations
-            retries: 3
-            retry_delay: 300
-            optimize: svg
-            verify: yes
+          retries: 3
+          retry_delay: 300
+          optimize: svg
+          verify: yes
 
   repository-calendar:
     name: "Full-year calendar"
