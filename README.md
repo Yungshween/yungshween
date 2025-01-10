@@ -13,6 +13,7 @@ I'm Andrew, a developer focused on optimizing workflows and strengthening core p
 ### Development Activity
 
 ![Activity](/docs/assets/images/metrics/metrics.activity.svg)
+![ISO Calendar](/docs/assets/images/metrics/metrics.plugin.isocalendar.fullyear.svg)
 
 ### Repository Traffic
 
@@ -21,10 +22,12 @@ I'm Andrew, a developer focused on optimizing workflows and strengthening core p
 ### Development Habits
 
 ![Habits](/docs/assets/images/metrics/metrics.habits.svg)
+![Topics](/docs/assets/images/metrics/metrics.plugin.topics.icons.svg)
 
 ### License Information
 
 ![Licenses](/docs/assets/images/metrics/metrics.licenses.svg)
+![License Ratio](/docs/assets/images/metrics/metrics.plugin.licenses.ratio.svg)
 
 ### Bio
 
