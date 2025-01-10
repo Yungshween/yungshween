@@ -123,7 +123,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           template: repository
-          repo: Yungshween/nexus-ai
+          repo: nexus-ai
           plugin_licenses: yes
           plugin_licenses_setup: |
             bash -c '
