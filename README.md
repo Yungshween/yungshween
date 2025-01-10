@@ -1,51 +1,9 @@
-# Welcome to My Digital Workshop 🔧
+# Welcome to My Digital Workshop
 
 I'm Andrew, a developer focused on optimizing workflows and strengthening core programming skills while building AI-powered solutions for financial markets.
 
 <table>
-  <tr>
-    <th align="center">Overview</th>
-    <th align="center">Language Distribution</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <img alt="Repository Metrics" width="400" src="/docs/assets/images/metrics/github-metrics.svg">
-    </td>
-    <td align="center">
-      <img alt="Languages" width="400" src="/docs/assets/images/metrics/metrics.languages.svg">
-    </td>
-  </tr>
-  <tr>
-    <th align="center">Development Activity</th>
-    <th align="center">Repository Traffic</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <details open><summary>Activity Overview</summary>
-      <img alt="Activity" width="400" src="/docs/assets/images/metrics/metrics.activity.svg">
-      </details>
-      <details open><summary>Calendar</summary>
-      <img alt="ISO Calendar" width="400" src="/docs/assets/images/metrics/metrics.plugin.isocalendar.fullyear.svg">
-      </details>
-    </td>
-    <td align="center">
-      <img alt="Traffic" width="400" src="/docs/assets/images/metrics/metrics.traffic.svg">
-    </td>
-  </tr>
-  <tr>
-    <th align="center">Development Habits</th>
-    <th align="center">License Information</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <img alt="Habits" width="400" src="/docs/assets/images/metrics/metrics.habits.svg">
-      <img alt="Topics" width="400" src="/docs/assets/images/metrics/metrics.plugin.topics.icons.svg">
-    </td>
-    <td align="center">
-      <img alt="Licenses" width="400" src="/docs/assets/images/metrics/metrics.licenses.svg">
-      <img alt="License Ratio" width="400" src="/docs/assets/images/metrics/metrics.plugin.licenses.ratio.svg">
-    </td>
-  </tr>
+  <!-- Personal Information Section -->
   <tr>
     <th colspan="2">About Me</th>
   </tr>
@@ -78,6 +36,65 @@ I'm Andrew, a developer focused on optimizing workflows and strengthening core p
       <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face">
     </td>
   </tr>
+
+  <!-- Development Metrics Section -->
+  <tr>
+    <th colspan="2">Development Metrics</th>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img alt="Repository Metrics" width="400" src="/docs/assets/images/metrics/github-metrics.svg">
+    </td>
+    <td align="center" width="50%">
+      <img alt="WakaTime Stats" width="400" src="/docs/assets/images/metrics/metrics.plugin.wakatime.svg">
+    </td>
+  </tr>
+
+  <!-- Language and Activity Section -->
+  <tr>
+    <td align="center">
+      <img alt="Languages" width="400" src="/docs/assets/images/metrics/metrics.languages.svg">
+    </td>
+    <td align="center">
+      <details open><summary>Activity Calendar</summary>
+      <img alt="ISO Calendar" width="400" src="/docs/assets/images/metrics/metrics.plugin.isocalendar.fullyear.svg">
+      </details>
+    </td>
+  </tr>
+
+  <!-- Research and Activity Section -->
+  <tr>
+    <th colspan="2">Research & Development Activity</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <details open><summary>Latest Research</summary>
+      <img alt="RSS Feed" width="400" src="/docs/assets/images/metrics/metrics.plugin.rss.svg">
+      </details>
+    </td>
+    <td align="center">
+      <details open><summary>Project Activity</summary>
+      <img alt="Projects" width="400" src="/docs/assets/images/metrics/metrics.projects.svg">
+      </details>
+    </td>
+  </tr>
+
+  <!-- Topics and RSS Section -->
+  <tr>
+    <td align="center">
+      <details open><summary>Topics of Interest</summary>
+      <img alt="Topics" width="400" src="/docs/assets/images/metrics/metrics.topics.svg">
+      <img alt="Topic Icons" width="400" src="/docs/assets/images/metrics/metrics.plugin.topics.icons.svg">
+      </details>
+    </td>
+    <td align="center">
+      <details open><summary>Recent Updates</summary>
+      <img alt="RSS Feed" width="400" src="/docs/assets/images/metrics/metrics.plugin.rss.svg">
+      </details>
+    </td>
+  </tr>
+
+  <!-- Current Project Section -->
   <tr>
     <th colspan="2">Current Project 🚧</th>
   </tr>
@@ -95,6 +112,8 @@ I'm Andrew, a developer focused on optimizing workflows and strengthening core p
       </ul>
     </td>
   </tr>
+
+  <!-- Learning Section -->
   <tr>
     <th colspan="2">Currently Learning 📚</th>
   </tr>
@@ -117,6 +136,8 @@ I'm Andrew, a developer focused on optimizing workflows and strengthening core p
       </ul>
     </td>
   </tr>
+
+  <!-- GitHub Stats Section -->
   <tr>
     <th colspan="2">GitHub Stats</th>
   </tr>
