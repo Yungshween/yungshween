@@ -42,6 +42,8 @@ jobs:
           
   projects:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
@@ -52,6 +54,8 @@ jobs:
           
   leetcode:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
@@ -124,10 +128,14 @@ jobs:
 
   repository-calendar:
     name: Full-year calendar
-    uses: lowlighter/metrics@latest
-    with:
-      filename: metrics.plugin.isocalendar.fullyear.svg
-      token: ${{ secrets.METRICS_TOKEN }}
-      base: ""
-      plugin_isocalendar: yes
-      plugin_isocalendar_duration: full-year
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      uses: lowlighter/metrics@latest
+      with:
+        filename: metrics.plugin.isocalendar.fullyear.svg
+        token: ${{ secrets.METRICS_TOKEN }}
+        base: ""
+        plugin_isocalendar: yes
+        plugin_isocalendar_duration: full-year
