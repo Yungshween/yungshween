@@ -119,15 +119,14 @@ jobs:
         with:
           repository: Yungshween/nexus-ai
           token: ${{ secrets.NEXUS_PAT }}
-          path: main
+          path: ./nexus-ai
 
       - uses: lowlighter/metrics@latest
         with:
           filename: docs/assets/images/metrics/metrics.plugin.licenses.ratio.svg
           token: ${{ secrets.NEXUS_PAT }}
           base: ""
-          user: Yungshween
-          repo: nexus-ai
+          repo: Yungshween/nexus-ai
           template: repository
           plugin_licenses: yes
           plugin_licenses_setup: |
@@ -145,7 +144,7 @@ jobs:
           retries: 3
           optimize: svg
           verify: yes
-
+      
       # Calendar
       - uses: lowlighter/metrics@latest
         with:
