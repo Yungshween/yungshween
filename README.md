@@ -79,20 +79,27 @@ I'm Andrew, a developer focused on optimizing workflows and strengthening core p
     </td>
   </tr>
 
-  <!-- Topics and RSS Section -->
-  <tr>
-    <td align="center">
-      <details open><summary>Topics of Interest</summary>
-      <img alt="Topics" width="400" src="/docs/assets/images/metrics/metrics.topics.svg">
-      <img alt="Topic Icons" width="400" src="/docs/assets/images/metrics/metrics.plugin.topics.icons.svg">
-      </details>
-    </td>
-    <td align="center">
-      <details open><summary>Recent Updates</summary>
-      <img alt="RSS Feed" width="400" src="/docs/assets/images/metrics/metrics.plugin.rss.svg">
-      </details>
-    </td>
-  </tr>
+<!-- Topics and Starlist Section -->
+<tr>
+  <th colspan="3">Topics of Interest</th>
+</tr>
+<tr>
+  <td align="center">
+    <details open><summary>Topics</summary>
+    <img alt="Topics" src="/docs/assets/images/metrics/metrics.topics.svg">
+    </details>
+  </td>
+  <td align="center">
+    <details open><summary>Topic Icons</summary>
+    <img alt="Topic Icons" src="/docs/assets/images/metrics/metrics.plugin.topics.icons.svg">
+    </details>
+  </td>
+  <td align="center">
+    <details open><summary>Recent Updates</summary>
+    <img alt="RSS Feed" src="/docs/assets/images/metrics/metrics.plugin.rss.svg">
+    </details>
+  </td>
+</tr>
 
   <!-- Current Project Section -->
   <tr>
@@ -124,6 +131,7 @@ I'm Andrew, a developer focused on optimizing workflows and strengthening core p
           <ul>
             <li>TensorFlow/PyTorch implementations</li>
             <li>Financial modeling automation</li>
+            <li>Algo Trading LLM integration</li>
           </ul>
         </li>
         <li>Full Stack Development
