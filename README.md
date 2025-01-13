@@ -79,33 +79,33 @@ I'm Andrew, a developer focused on optimizing workflows and strengthening core p
     </td>
   </tr>
 
-<!-- Topics and Starlist Section -->
-<tr>
-  <th colspan="2">Topics of Interest</th>
-</tr>
-<tr>
-  <td colspan="2">
-    <table>
-      <tr>
-        <td align="center">
-          <details open><summary>Topics</summary>
-          <img alt="Topics" src="/docs/assets/images/metrics/metrics.topics.svg">
-          </details>
-        </td>
-        <td align="center">
-          <details open><summary>Topic Icons</summary>
-          <img alt="Topic Icons" src="/docs/assets/images/metrics/metrics.plugin.topics.icons.svg">
-          </details>
-        </td>
-        <td align="center">
-          <details open><summary>Star Lists</summary>
-          <img alt="Star Lists" src="/docs/assets/images/metrics/metrics.starlists.svg">
-          </details>
-        </td>
-      </tr>
-    </table>
-  </td>
-</tr>
+  <!-- Topics and Starlist Section -->
+  <tr>
+    <th colspan="2">Topics of Interest</th>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <table>
+        <tr>
+          <td align="center">
+            <details open><summary>Topics</summary>
+            <img alt="Topics" src="/docs/assets/images/metrics/metrics.topics.svg">
+            </details>
+          </td>
+          <td align="center">
+            <details open><summary>Topic Icons</summary>
+            <img alt="Topic Icons" src="/docs/assets/images/metrics/metrics.plugin.topics.icons.svg">
+            </details>
+          </td>
+          <td align="center">
+            <details open><summary>Star Lists</summary>
+            <img alt="Star Lists" src="/docs/assets/images/metrics/metrics.starlists.svg">
+            </details>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
 
   <!-- Current Project Section -->
   <tr>
