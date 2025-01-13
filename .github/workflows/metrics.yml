@@ -126,7 +126,9 @@ jobs:
           filename: docs/assets/images/metrics/metrics.plugin.licenses.ratio.svg
           token: ${{ secrets.NEXUS_PAT }}
           base: ""
-          repo: Yungshween/nexus-ai
+          user: Yungshween
+          repo: nexus-ai
+          template: repository
           plugin_licenses: yes
           plugin_licenses_setup: |
             bash -c '
