@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          path: .
 
       - name: Checkout nexus-ai repository
         uses: actions/checkout@v4
@@ -34,6 +32,7 @@ jobs:
           repo: nexus-ai
           template: repository
           plugin_licenses: yes
+          committer_token: ${{ secrets.NEXUS_PAT }}
           plugin_licenses_setup: |
             bash -c '
             cd nexus-ai
