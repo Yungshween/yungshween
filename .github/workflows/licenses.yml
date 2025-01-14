@@ -24,6 +24,8 @@ jobs:
 
       - name: "License Graphic"
         uses: lowlighter/metrics@latest
+        env:
+          GH_TOKEN: ${{ secrets.NEXUS_PAT }}
         with:
           filename: docs/assets/images/metrics/metrics.plugin.licenses.ratio.svg
           token: ${{ secrets.NEXUS_PAT }}
