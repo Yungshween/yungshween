@@ -7,16 +7,16 @@ on:
 
 jobs:
   metrics:
-    name: "Generate All Metrics"
+    name: "Generate License Graph"
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Checkout repository
+      - name: Checkout nexus-ai repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.NEXUS_PAT }}
           repository: Yungshween/nexus-ai
+          token: ${{ secrets.NEXUS_PAT }}
           path: nexus-ai
 
       - name: Set up Python
@@ -29,20 +29,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install uv
           pip install .
-        working-directory: backend
+        working-directory: nexus-ai/backend
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16' # Ensure this matches your local development version
+          node-version: '16'
 
       - name: Install Node.js dependencies
         run: npm ci
-        working-directory: frontend
+        working-directory: nexus-ai/frontend
 
       - name: Build frontend
         run: npm run build
-        working-directory: frontend
+        working-directory: nexus-ai/frontend
 
       - uses: lowlighter/metrics@latest
         with:
@@ -55,14 +55,14 @@ jobs:
           plugin_licenses: yes
           plugin_licenses_setup: |
             bash -c '
-            if [ -f backend/pyproject.toml ]; then
-              cd backend
+            if [ -f nexus-ai/backend/pyproject.toml ]; then
+              cd nexus-ai/backend
               python -m pip install --upgrade pip
               pip install uv
               uv pip install . || true
             fi
-            if [ -f frontend/package.json ]; then
-              cd frontend
+            if [ -f nexus-ai/frontend/package.json ]; then
+              cd nexus-ai/frontend
               npm ci || true
             fi'
           plugin_licenses_legal: yes
