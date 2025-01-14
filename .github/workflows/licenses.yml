@@ -27,6 +27,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install uv
           pip install .
+        working-directory: backend
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -53,11 +54,13 @@ jobs:
           plugin_licenses_setup: |
             bash -c '
             if [ -f backend/pyproject.toml ]; then
+              cd backend
               python -m pip install --upgrade pip
               pip install uv
               uv pip install . || true
             fi
             if [ -f frontend/package.json ]; then
+              cd frontend
               npm ci || true
             fi'
           plugin_licenses_legal: yes
