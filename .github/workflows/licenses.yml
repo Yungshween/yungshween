@@ -16,6 +16,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.NEXUS_PAT }}
+          repository: Yungshween/nexus-ai
+          path: nexus-ai
 
       - name: Set up Python
         uses: actions/setup-python@v4
