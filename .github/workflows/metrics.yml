@@ -117,16 +117,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          repository: Yungshween/nexus-ai
+          repository: Yungshween/nexus-ai.git
           token: ${{ secrets.NEXUS_PAT }}
-          path: ./nexus-ai
+          fetch-depth: 0
 
       - uses: lowlighter/metrics@latest
         with:
           filename: docs/assets/images/metrics/metrics.plugin.licenses.ratio.svg
           token: ${{ secrets.NEXUS_PAT }}
           base: ""
-          repo: Yungshween/nexus-ai
+          repo: Yungshween/nexus-ai.git
           template: repository
           plugin_licenses: yes
           plugin_licenses_setup: |
