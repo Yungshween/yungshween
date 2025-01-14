@@ -7,11 +7,16 @@ on:
 
 jobs:
   metrics:
-    name: "Checkout Repo"
+    name: "Generate License Metrics"
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          path: .
+
       - name: Checkout nexus-ai repository
         uses: actions/checkout@v4
         with:
@@ -25,19 +30,21 @@ jobs:
           filename: docs/assets/images/metrics/metrics.plugin.licenses.ratio.svg
           token: ${{ secrets.NEXUS_PAT }}
           base: ""
-          repo: Yungshween/nexus-ai
+          user: Yungshween
+          repo: nexus-ai
           template: repository
           plugin_licenses: yes
           plugin_licenses_setup: |
             bash -c '
-            if [ -f nexus-ai/backend/pyproject.toml ]; then
-              cd nexus-ai/backend
+            cd nexus-ai
+            if [ -f backend/pyproject.toml ]; then
+              cd backend
               python -m pip install --upgrade pip
               pip install uv
               pip install -e .
             fi
-            if [ -f nexus-ai/frontend/package.json ]; then
-              cd nexus-ai/frontend
+            if [ -f frontend/package.json ]; then
+              cd frontend
               npm ci
               npm run build
             fi'
