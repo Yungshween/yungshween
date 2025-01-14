@@ -112,38 +112,6 @@ jobs:
           plugin_rss: yes
           plugin_rss_source: http://export.arxiv.org/rss/q-fin 
           plugin_rss_limit: 8
-
-      # Repository License
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          repository: Yungshween/nexus-ai.git
-          token: ${{ secrets.NEXUS_PAT }}
-          fetch-depth: 0
-
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: docs/assets/images/metrics/metrics.plugin.licenses.ratio.svg
-          token: ${{ secrets.NEXUS_PAT }}
-          base: ""
-          repo: Yungshween/nexus-ai.git
-          template: repository
-          plugin_licenses: yes
-          plugin_licenses_setup: |
-            bash -c '
-            if [ -f backend/pyproject.toml ]; then
-              python -m pip install --upgrade pip
-              pip install uv
-              uv pip install . || true
-            fi
-            if [ -f frontend/package.json ]; then
-              npm ci || true
-            fi'
-          plugin_licenses_legal: yes
-          plugin_licenses_ratio: yes
-          retries: 3
-          optimize: svg
-          verify: yes
       
       # Calendar
       - uses: lowlighter/metrics@latest
