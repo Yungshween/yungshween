@@ -19,22 +19,22 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: Yungshween/nexus-ai
-          token: ${{ secrets.NEXUS_PAT }}
+          token: ${{ secrets.NEXUS_TOKEN }}
           path: nexus-ai
 
       - name: "License Graphic"
         uses: lowlighter/metrics@latest
         env:
-          GH_TOKEN: ${{ secrets.NEXUS_PAT }}
+          GH_TOKEN: ${{ secrets.NEXUS_TOKEN }}
         with:
           filename: docs/assets/images/metrics/metrics.plugin.licenses.ratio.svg
-          token: ${{ secrets.NEXUS_PAT }}
-          base: ""
+          token: ${{ secrets.NEXUS_TOKEN }}
+          base: "repositories"
           user: Yungshween
           repo: nexus-ai
           template: repository
           plugin_licenses: yes
-          committer_token: ${{ secrets.NEXUS_PAT }}
+          committer_token: ${{ secrets.NEXUS_TOKEN }}
           plugin_licenses_setup: |
             bash -c '
             cd nexus-ai
