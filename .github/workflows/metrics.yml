@@ -18,7 +18,7 @@ jobs:
           template: classic
           base: header, activity, community, repositories
           filename: docs/assets/images/metrics/github-metrics.svg
-          token: ${{ secrets.NEXUS_PAT }}
+          token: ${{ secrets.PAT }}
           config_timezone: America/New_York
           retries: 3
           optimize: svg
@@ -28,7 +28,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: docs/assets/images/metrics/metrics.languages.svg
-          token: ${{ secrets.NEXUS_PAT }}
+          token: ${{ secrets.PAT }}
           base: ""
           plugin_languages: yes
           plugin_languages_analysis_timeout: 30
@@ -45,7 +45,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: docs/assets/images/metrics/metrics.projects.svg
-          token: ${{ secrets.NEXUS_PAT }}
+          token: ${{ secrets.PAT }}
           base: ""
           plugin_projects: yes
           plugin_projects_limit: 4
@@ -54,7 +54,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: docs/assets/images/metrics/metrics.leetcode.svg
-          token: ${{ secrets.NEXUS_PAT }}
+          token: ${{ secrets.PAT }}
           base: ""
           plugin_leetcode: yes
           plugin_leetcode_user: yungshween
@@ -63,7 +63,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: docs/assets/images/metrics/metrics.starlists.svg
-          token: ${{ secrets.NEXUS_PAT }}
+          token: ${{ secrets.PAT }}
           base: ""
           plugin_starlists: yes
           plugin_starlists_limit: 2
@@ -75,7 +75,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: docs/assets/images/metrics/metrics.topics.svg
-          token: ${{ secrets.NEXUS_PAT }}
+          token: ${{ secrets.PAT }}
           base: ""
           plugin_topics: yes
           plugin_topics_sort: stars
@@ -85,7 +85,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: docs/assets/images/metrics/metrics.plugin.topics.icons.svg
-          token: ${{ secrets.NEXUS_PAT }}
+          token: ${{ secrets.PAT }}
           base: ""
           plugin_topics: yes
           plugin_topics_limit: 0
@@ -117,7 +117,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: docs/assets/images/metrics/metrics.plugin.isocalendar.fullyear.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.PAT }}
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
