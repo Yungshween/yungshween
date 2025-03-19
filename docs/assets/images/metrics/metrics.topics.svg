@@ -17,8 +17,8 @@
                     <section>
                         <div class="topics fill-width">
                             <div class="label" title="Python is a dynamically typed programming language.">python</div>
-                            <div class="label" title="React is an open source JavaScript library used for designing user interfaces.">react</div>
                             <div class="label" title="An API (Application Programming Interface) is a collection of protocols and subroutines for building software.">api</div>
+                            <div class="label" title="React is an open source JavaScript library used for designing user interfaces.">react</div>
                             <div class="label" title="Docker is a platform built for developers to build and run applications.">docker</div>
                             <div class="label" title="Deep Learning is an artificial neural network composed of many layers.">deep learning</div>
                             <div class="label" title="Automate your code review with style, quality, security, and test‑coverage checks when you need them.">code quality</div>
